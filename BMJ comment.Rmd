@@ -282,8 +282,6 @@ exp(pooledRoR)
 logRoRcoin=invlogOR1-invlogOR2
 selogRoR=sqrt(selogOR1^2+selogOR2^2)
 pooledRoRcoin=metagen(logRoRcoin,selogRoR)$TE.random
-exp(pooledRoRcoin)
-
 subdiffdiffobshet=rbind.data.frame(subdiffdiffobshet,c(exp(pooledRoRcoin),c(exp(pooledRoR)), 1.2/(1.2+i*0.1)))
 }
 names(subdiffdiffobshet)=c("RoRcoin", "RoRnocoin","ExpectedRoR")
